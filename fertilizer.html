@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Fertilizer | International prices</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.e41ddd15.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.e41ddd15.css">
+<link rel="modulepreload" href="./_observablehq/client.f1702668.js">
+<link rel="modulepreload" href="./_observablehq/runtime.fa9f71c0.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.4fcd34c5.js">
+<link rel="modulepreload" href="./_import/components/commodity.53223391.js">
+<link rel="modulepreload" href="./_import/components/fonts.6c240c9a.js">
+<link rel="modulepreload" href="./_import/components/format.6a7f54bb.js">
+<link rel="modulepreload" href="./_import/components/priceChart.651ab6d5.js">
+<link rel="modulepreload" href="./_import/components/latest.011583db.js">
+<link rel="modulepreload" href="./_import/components/quoteTable.b9e78dae.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_import/components/chartData.cd747b9e.js">
+<link rel="modulepreload" href="./_import/components/png.6f580b3e.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/apache-arrow@21.2.0/63b06f0b.js">
+<link rel="modulepreload" href="./_npm/parquet-wasm@0.9.0/bd2cf640.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/tslib@2.9.1/2dc082bf.js">
+<link rel="modulepreload" href="./_npm/flatbuffers@25.9.23/c8db6147.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<link rel="icon" href="data:,"><meta name="robots" content="noindex">
+<script type="module">
+
+import {define} from "./_observablehq/client.f1702668.js";
+import {registerFile} from "./_observablehq/stdlib.4fcd34c5.js";
+
+registerFile("./data/latest.parquet", {"name":"./data/latest.parquet","path":"./_file/data/latest.256531e8.parquet","lastModified":1793461447613,"size":2713});
+registerFile("./data/monthly/history.parquet", {"name":"./data/monthly/history.parquet","path":"./_file/data/monthly/history.7e1f4023.parquet","lastModified":1793461424431,"size":44760});
+registerFile("./data/monthly/meta.json", {"name":"./data/monthly/meta.json","mimeType":"application/json","path":"./_file/data/monthly/meta.fbe0e3db.json","lastModified":1793461424431,"size":310});
+registerFile("./data/monthly/prices.parquet", {"name":"./data/monthly/prices.parquet","path":"./_file/data/monthly/prices.e11b3de3.parquet","lastModified":1793461424431,"size":10857});
+registerFile("./fonts/OpenSans-Bold.ttf", {"name":"./fonts/OpenSans-Bold.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Bold.5894a364.ttf","lastModified":1793461424433,"size":224592});
+registerFile("./fonts/OpenSans-Italic.ttf", {"name":"./fonts/OpenSans-Italic.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Italic.a54dc848.ttf","lastModified":1793461424433,"size":212896});
+registerFile("./fonts/OpenSans-Regular.ttf", {"name":"./fonts/OpenSans-Regular.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Regular.e64e508b.ttf","lastModified":1793461424433,"size":217360});
+
+define({id: "b95cef79", inputs: ["FileAttachment"], outputs: ["commodityPage","prices","history","meta","latest"], body: async (FileAttachment) => {
+const {commodityPage} = await import("./_import/components/commodity.53223391.js");
+const prices = FileAttachment("./data/monthly/prices.parquet").parquet();
+const history = FileAttachment("./data/monthly/history.parquet").parquet();
+const meta = FileAttachment("./data/monthly/meta.json").json();
+const latest = FileAttachment("./data/latest.parquet").parquet();
+return {commodityPage,prices,history,meta,latest};
+}});
+
+define({id: "e71c3fef", inputs: ["display","commodityPage","prices","history","meta","latest","width"], outputs: ["config"], body: (display,commodityPage,prices,history,meta,latest,width) => {
+const config = {
+  "sections": [
+    "FERT"
+  ],
+  "charts": [
+    {
+      "fids": [
+        "F-FERT-UREA",
+        "F-FERT-DAP",
+        "F-FERT-MOP"
+      ],
+      "unit": "USD/MT",
+      "filename": "fertilizer"
+    }
+  ]
+};
+display(commodityPage({...config, prices, history, meta, latest, width}));
+return {config};
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">International prices</a></li>
+  </ol>
+  <div id="observablehq-search"><input type="search" placeholder="Search"></div>
+  <div id="observablehq-search-results"></div>
+  <script>{const o=document.querySelector("#observablehq-search");o.setAttribute("data-shortcut",`${/Mac|iPhone/.test(navigator.platform)?"\u2318":"Alt-"}K`);const t=o.querySelector("input"),r=()=>import("./_observablehq/search.5240df30.js");t.addEventListener("focus",r,{once:!0}),t.addEventListener("keydown",r,{once:!0});const c=document.querySelector("#observablehq-sidebar-toggle");addEventListener("keydown",e=>{(e.code==="KeyK"&&e.metaKey&&!e.altKey&&!e.ctrlKey||e.key==="/"&&!e.metaKey&&!e.altKey&&!e.ctrlKey&&e.target===document.body)&&(c.checked?t.focus():(c.click(),t.focus(),c.click()),t.select(),e.preventDefault())});}</script>
+  <section>
+    <summary>Staple foods</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./maize">Maize</a></li>
+    <li class="observablehq-link"><a href="./rice">Rice</a></li>
+    <li class="observablehq-link"><a href="./wheat">Wheat</a></li>
+    <li class="observablehq-link"><a href="./oilseeds">Oilseeds</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Energy and fertilizer</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./crude-oil">Crude oil</a></li>
+    <li class="observablehq-link"><a href="./natural-gas">Natural gas</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./fertilizer">Fertilizer</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Indices, metals and shipping</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./food-price-index">FAO Food Price Index</a></li>
+    <li class="observablehq-link"><a href="./metals">Metals</a></li>
+    <li class="observablehq-link"><a href="./shipping">Shipping</a></li>
+    </ol>
+  </section>
+  <ol>
+    <li class="observablehq-link"><a href="./daily">Daily prices</a></li>
+    <li class="observablehq-link"><a href="./build">Build a chart</a></li>
+    <li class="observablehq-link"><a href="./sources">Sources</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<span class="beta-tag">Beta version, do not cite</span>
+</header>
+<main id="observablehq-main" class="observablehq">
+<h1 id="fertilizer" tabindex="-1"><a class="observablehq-header-anchor" href="#fertilizer">Fertilizer</a></h1>
+<div class="observablehq observablehq--block"><!--:b95cef79:--></div>
+<div class="observablehq observablehq--block"><!--:e71c3fef:--></div>
+<p>Monthly only: no free daily source.</p>
+</main>
+<footer id="observablehq-footer">
+<div>Beta version, do not cite.</div>
+</footer>
+</div>
+</body>
+</html>
