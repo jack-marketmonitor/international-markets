@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Wheat | International prices</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.e41ddd15.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.e41ddd15.css">
+<link rel="modulepreload" href="./_observablehq/client.ca616e14.js">
+<link rel="modulepreload" href="./_observablehq/runtime.fa9f71c0.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.8ab8c2e4.js">
+<link rel="modulepreload" href="./_import/components/commodity.6d6f8581.js">
+<link rel="modulepreload" href="./_import/components/fonts.28beb698.js">
+<link rel="modulepreload" href="./_import/components/format.6a7f54bb.js">
+<link rel="modulepreload" href="./_import/components/priceChart.bce711f0.js">
+<link rel="modulepreload" href="./_import/components/latest.011583db.js">
+<link rel="modulepreload" href="./_import/components/quoteTable.b9e78dae.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_import/components/chartData.f71c7d5a.js">
+<link rel="modulepreload" href="./_import/components/chartLayout.7e1b50ab.js">
+<link rel="modulepreload" href="./_import/components/png.cca728b1.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.19/2e9f152c.js">
+<link rel="modulepreload" href="./_npm/apache-arrow@21.2.0/63b06f0b.js">
+<link rel="modulepreload" href="./_npm/parquet-wasm@0.9.0/bd2cf640.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.2/172963d6.js">
+<link rel="modulepreload" href="./_npm/tslib@2.9.1/2dc082bf.js">
+<link rel="modulepreload" href="./_npm/flatbuffers@25.9.23/c8db6147.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.5/52d144d7.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.1/c0e5fbdf.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.1/321ca391.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.2/468a53d3.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.1/91613843.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.3/8e79d948.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.6/d6c84ddb.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.2/a70bd0ef.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.1/47229f37.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.2/4a4147a2.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.2/ca4f77fd.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.2/eef84249.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.1/c1b23a7b.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.3/b1442952.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.2/e07dc79e.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.3/d3b0a1aa.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.2/6de199be.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.1/9eb769d3.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.2/93595b54.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.2/80bafd54.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.2/8bf3f736.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.3/d15d690b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.1/287966da.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.1/c4158eb5.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.1/a41eab18.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.1/acaa76bc.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.1/d561e9cd.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.2/ea7e7cf7.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.2/f861168f.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.1/c1f09323.js">
+<link rel="icon" href="data:,"><meta name="robots" content="noindex">
+<script type="module">
+
+import {define} from "./_observablehq/client.ca616e14.js";
+import {registerFile} from "./_observablehq/stdlib.8ab8c2e4.js";
+
+registerFile("./data/latest.parquet", {"name":"./data/latest.parquet","path":"./_file/data/latest.ef8570f8.parquet","lastModified":1794068727143,"size":2700});
+registerFile("./data/monthly/history.parquet", {"name":"./data/monthly/history.parquet","path":"./_file/data/monthly/history.f1e7b287.parquet","lastModified":1794068706270,"size":44986});
+registerFile("./data/monthly/meta.json", {"name":"./data/monthly/meta.json","mimeType":"application/json","path":"./_file/data/monthly/meta.40316b63.json","lastModified":1794068706270,"size":310});
+registerFile("./data/monthly/prices.parquet", {"name":"./data/monthly/prices.parquet","path":"./_file/data/monthly/prices.1fbb682c.parquet","lastModified":1794068706270,"size":10713});
+registerFile("./fonts/OpenSans-Bold.ttf", {"name":"./fonts/OpenSans-Bold.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Bold.5894a364.ttf","lastModified":1794068706271,"size":224592});
+registerFile("./fonts/OpenSans-Italic.ttf", {"name":"./fonts/OpenSans-Italic.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Italic.a54dc848.ttf","lastModified":1794068706272,"size":212896});
+registerFile("./fonts/OpenSans-Regular.ttf", {"name":"./fonts/OpenSans-Regular.ttf","mimeType":"font/ttf","path":"./_file/fonts/OpenSans-Regular.e64e508b.ttf","lastModified":1794068706272,"size":217360});
+
+define({id: "b95cef79", inputs: ["FileAttachment"], outputs: ["commodityPage","prices","history","meta","latest"], body: async (FileAttachment) => {
+const {commodityPage} = await import("./_import/components/commodity.6d6f8581.js");
+const prices = FileAttachment("./data/monthly/prices.parquet").parquet();
+const history = FileAttachment("./data/monthly/history.parquet").parquet();
+const meta = FileAttachment("./data/monthly/meta.json").json();
+const latest = FileAttachment("./data/latest.parquet").parquet();
+return {commodityPage,prices,history,meta,latest};
+}});
+
+define({id: "7c9f571a", inputs: ["display","commodityPage","prices","history","meta","latest","width"], outputs: ["config"], body: (display,commodityPage,prices,history,meta,latest,width) => {
+const config = {
+  "sections": [
+    "WHEAT"
+  ],
+  "charts": [
+    {
+      "fids": [
+        "F-WHEAT-ARG",
+        "F-WHEAT-USHRW"
+      ],
+      "unit": "USD/MT FOB",
+      "filename": "wheat_export_prices"
+    },
+    {
+      "title": "By origin",
+      "fids": [
+        "F-WHEAT-RUS",
+        "F-WHEAT-FRA",
+        "F-WHEAT-AUS",
+        "F-WHEAT-CAN",
+        "F-WHEAT-KAZ"
+      ],
+      "unit": "USD/MT",
+      "filename": "wheat_origins"
+    }
+  ]
+};
+display(commodityPage({...config, prices, history, meta, latest, width}));
+return {config};
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">International prices</a></li>
+  </ol>
+  <div id="observablehq-search"><input type="search" placeholder="Search"></div>
+  <div id="observablehq-search-results"></div>
+  <script>{const o=document.querySelector("#observablehq-search");o.setAttribute("data-shortcut",`${/Mac|iPhone/.test(navigator.platform)?"\u2318":"Alt-"}K`);const t=o.querySelector("input"),r=()=>import("./_observablehq/search.5240df30.js");t.addEventListener("focus",r,{once:!0}),t.addEventListener("keydown",r,{once:!0});const c=document.querySelector("#observablehq-sidebar-toggle");addEventListener("keydown",e=>{(e.code==="KeyK"&&e.metaKey&&!e.altKey&&!e.ctrlKey||e.key==="/"&&!e.metaKey&&!e.altKey&&!e.ctrlKey&&e.target===document.body)&&(c.checked?t.focus():(c.click(),t.focus(),c.click()),t.select(),e.preventDefault())});}</script>
+  <section class="observablehq-section-active">
+    <summary>Staple foods</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./maize">Maize</a></li>
+    <li class="observablehq-link"><a href="./rice">Rice</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./wheat">Wheat</a></li>
+    <li class="observablehq-link"><a href="./oilseeds">Oilseeds</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Energy and fertilizer</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./crude-oil">Crude oil</a></li>
+    <li class="observablehq-link"><a href="./natural-gas">Natural gas</a></li>
+    <li class="observablehq-link"><a href="./fertilizer">Fertilizer</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Indices, metals and shipping</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./food-price-index">FAO Food Price Index</a></li>
+    <li class="observablehq-link"><a href="./metals">Metals</a></li>
+    <li class="observablehq-link"><a href="./shipping">Shipping</a></li>
+    </ol>
+  </section>
+  <ol>
+    <li class="observablehq-link"><a href="./daily">Daily prices</a></li>
+    <li class="observablehq-link"><a href="./build">Build a chart</a></li>
+    <li class="observablehq-link"><a href="./sources">Sources</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<span class="beta-tag">Beta version, do not cite</span>
+</header>
+<main id="observablehq-main" class="observablehq">
+<h1 id="wheat" tabindex="-1"><a class="observablehq-header-anchor" href="#wheat">Wheat</a></h1>
+<div class="observablehq observablehq--block"><!--:b95cef79:--></div>
+<div class="observablehq observablehq--block"><!--:7c9f571a:--></div>
+<p>Daily series: IGC wheat sub-index, on the <a href="./daily">Daily</a> page.</p>
+</main>
+<footer id="observablehq-footer">
+<div>Beta version, do not cite.</div>
+</footer>
+</div>
+</body>
+</html>
