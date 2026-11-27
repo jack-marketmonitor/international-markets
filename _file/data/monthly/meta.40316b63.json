@@ -1,0 +1,13 @@
+{
+  "status": "built",
+  "data_month": "2026-10",
+  "built_at": "2026-11-05T13:23+00:00",
+  "sources": {
+    "eia_steo": "2026-10-01",
+    "fpma_intl": "2026-11-04",
+    "igc_gofi": "2026-11-04",
+    "imf_portwatch": "2026-11-04",
+    "wb_pink_indices": "2026-11-03",
+    "wb_pink_monthly": "2026-11-03"
+  }
+}
